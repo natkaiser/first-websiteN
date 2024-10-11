@@ -34,10 +34,12 @@
 
 .nav-toggle {
     display: none;
+    list-style: n   ;
 }
 
 .nav-toggle {
-    display: block;
+    display: none;
+    list-style: none;
     background: none;
     border: none;
     font-size: 1.5rem;
@@ -45,17 +47,11 @@
 }
 
 .nav-links{
-    display: none;
-    flex-direction: column;
-    position: absolute;
-    width: 100%;
-    background-color:white;
-    top: 80px;
-    left: 0;
-    padding: 1rem;
-    box-shadow: 0 2px 5px rgba (0, 0, 0, 0, 1);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
 }
-
 .nav-toggle:focus + .nav-links,
 .nav-links:hover {
     display: flex;
@@ -160,4 +156,25 @@ h3{
         width: 100%;
         padding: 10px;
     }
+    .nav-toggle {
+            display: block;
+            background: none;
+            list-style: none;
+            border: none;
+            font-size: 1.5rem;
+            cursor: pointer ;
+    flex-direction: row;
+    width: auto;
+    background-color:white;
+    top: 80px;
+    left: 0;
+    padding: 1rem;
+    box-shadow: 0 2px 5px rgba (0, 0, 0, 0, 1);
+}
+
+
+.nav-links{
+    display: none
+}
+
 }
