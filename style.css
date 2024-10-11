@@ -1,0 +1,163 @@
+.navbar{
+    background-color:lightblue;
+    padding: 16px;
+}
+
+.navbar-container{
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    width: 150px;
+    height: auto;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+}
+
+.nav-links a:visited{
+    color: red;
+}
+
+.nav-toggle {
+    display: none;
+}
+
+.nav-toggle {
+    display: block;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer ;
+}
+
+.nav-links{
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    width: 100%;
+    background-color:white;
+    top: 80px;
+    left: 0;
+    padding: 1rem;
+    box-shadow: 0 2px 5px rgba (0, 0, 0, 0, 1);
+}
+
+.nav-toggle:focus + .nav-links,
+.nav-links:hover {
+    display: flex;
+}
+
+.nav-links li {
+    margin: 10px 0;
+}
+
+ul{
+    display: flex;
+    gap: 20px;
+    font-size: 20px;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color:black;
+}
+
+a:visited{
+    color:red
+}
+
+#container{
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: auto;
+    align-items: center;
+}
+
+    
+h3{
+    font-size: 30px;
+    margin: 0;  
+}
+
+#txt{
+    font-size: 60px;
+    margin: 0;
+}
+
+#hobby{
+    width: 80%;
+    margin: auto;
+}
+
+#hobby-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.box{
+    width: 25%;
+    height: 400px;
+    border: 1px solid black;
+    padding: 10px;
+    text-align: left;
+    vertical-align: auto;
+    border-radius: 10px;
+}
+
+#idk{
+    background-color: black;
+    color: white;
+}
+
+@media (max-width: 600px){
+    #hobby-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        gap: 10px;
+    }
+
+    #container{
+        width: 80%;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-between;
+        margin: 100px auto;
+        align-items: center;
+    }
+    #container h3 {
+        font-size: 24px;
+    }
+    #container h1{
+        font-size: 36px;
+    }
+    #container img {
+        width: 400px;
+    }
+
+    .box {
+        width: 100%;
+        padding: 10px;
+    }
+}
